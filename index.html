@@ -7,29 +7,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" rel="stylesheet">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
     </style>
     <title>The Simon Game</title>
 </head>
 
-<body>
+<body class="red">
     <div class="heading">
         <h1 class=" glow-text pre">The Simon Game</h1>
     </div>
-    <div class="boxes1">
-        <div class="box1">
-            <button class="btn a ">1</button>
+
+    <div class="screen1 hide">
+
+        <div class="boxes1">
+            <div class="box1">
+                <button class="btn a ">1</button>
+            </div>
+            <div class="box2">
+                <button class="btn b">2</button>
+            </div>
         </div>
-        <div class="box2">
-            <button class="btn b">2</button>
+        <div class="boxes2">
+            <div class="box11">
+                <button class="btn c">3</button>
+            </div>
+            <div class="box22">
+                <button class="btn d">4</button>
+            </div>
         </div>
     </div>
-    <div class="boxes2">
-        <div class="box11">
-            <button class="btn c">3</button>
+    <div class="screen2 margin">
+        <div class="textt">
+            <h1 class="typed-out texttt"> Press Any Key To Start</h1>
         </div>
-        <div class="box22">
-            <button class="btn d">4</button>
+        <div class="start-btn">
+            <button class="btnnn" onclick="start()">Start</button>
+            <br><br>
+            <button class="btnnn" onclick="help()">How To Play</button>
+        </div>
+        <div class="hide">
+            <h1 class="typed-out texttt"> Score :</h1>
         </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>

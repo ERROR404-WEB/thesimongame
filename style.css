@@ -1,13 +1,17 @@
 *{
     margin:0;
     padding:0;
-    font-family: 'Kaushan Script', cursive;
+    font-family: 'Silkscreen', cursive;
     
 }
+
 ::-webkit-scrollbar {
     display: none;
 }
 body{
+    text-align: center;
+}
+.bg{
     text-align: center;
     background:url(images/bg.jpg);
     background-size: cover;
@@ -32,18 +36,7 @@ h1{
 .heading{
     margin-top: 2%;
 }
-@media(max-width:767px)
-{
-    body{
-        background:url(images/bg-mobile.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-color: black;
-    }
-    .heading{
-        margin-top: 5%;
-    }
-}
+
 .box1,.box2{
     display: inline-block;
 }
@@ -103,4 +96,67 @@ h1{
 .blink{
     background:linear-gradient( rgba(255, 255, 255, 0.274), rgba(255, 255, 255, 0.598) ), url(images/a.jpg) ;
     background-size: cover;
+}
+
+.red{
+    background-image:url(images/red2.jpg);
+    background-size: cover;
+}
+.hide{
+    display: none;
+}
+.textt{
+    color: rgb(255, 0, 0);
+    text-shadow: 0px 0px 10px red;
+    margin-top: 10px;
+}
+.typed-out{
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 1.6rem;
+    width: 0;
+    animation: typing 1s forwards;
+}
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+
+.btnnn{
+    background-color: rgba(255, 7, 7, 0.292);
+    color: rgb(255, 255, 255);
+    width: 90px;
+    cursor: pointer;
+    height:40px;
+    border:none;
+    text-shadow: 0px 0px 5px rgb(255, 254, 254);
+    box-shadow: 0px 0px 10px red;
+}
+.start-btn{
+    margin: 20px;
+}
+
+
+
+
+  @media(max-width:767px)
+{
+    .bg{
+        background:url(images/bg-mobile.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: black;
+    }
+    .red
+    {
+        background:url(images/red1.jpg);
+        background-size: cover;
+        
+    }
+    .heading{
+        margin-top: 5%;
+    }
+    .margin{
+        margin-top: 110%;
+    }
 }
