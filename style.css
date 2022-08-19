@@ -108,6 +108,7 @@ h1{
 .textt{
     color: rgb(255, 0, 0);
     text-shadow: 0px 0px 10px red;
+    
     margin-top: 10px;
 }
 .typed-out{

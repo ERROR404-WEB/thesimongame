@@ -2,7 +2,7 @@
 $(document).keydown(function(event){
 
     start();
-
+    begin();
 
 });
 
@@ -18,7 +18,7 @@ function end()
     $(".screen1").addClass("hide");
     $(".start-btn").removeClass("hide");
     $(".texttt").text("Your Score :");
-
+    $(".screen2").addClass("margin");
 }
 function start()
 {
@@ -31,6 +31,12 @@ function start()
 }
 function help()
 {
-    var s="Its a game of memorizing things. 1)Memorize the buttons which blinks 2)In every blink you have to memorize the path and click the buttons in the same  order 3)Difficulty Increases as you pass Levels"
+    var s="Its a game of memorizing things. 1)Memorize the buttons which blinks 2)In every blink you have to memorize the path and click the buttons in the same order"
     alert(s);
+}
+function begin()
+{
+    var level=1;
+    var a=[5,10,15,20];
+
 }
