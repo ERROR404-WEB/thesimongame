@@ -1,6 +1,7 @@
 var started = false;
 var level = 1, score = 0;
 var but = ['a', 'b', 'c', 'd'];
+var words=['green','red','red','blue'];
 var randomm = "";
 var count = 0;
 var clickedstring = "";
@@ -9,10 +10,11 @@ $(document).keydown(function (event) {
 
     if (!started) {
         start();
+        $(".textt2").addClass("hide");
         started = true;
     }
     else {
-
+        $(".textt2").removeClass("hide");
         $('.texttt').text("Level " + level);
         if(count==0) newelement();
         count++;
@@ -29,6 +31,15 @@ function newelement()
     playsound(but[r-1]);
     randomm+=but[r-1];
     index++;
+    score++;
+    if(score%5==0)
+    {
+        level++;
+        $('.texttt').text("Level " + level);
+    }
+    $('.textt2').text(words[r-1]);
+    $('.textt2').css("text-shadow","0px 0px 10px"+words[r-1]);
+    $('.textt2').css("color",words[r-1]);
 }
 var flag=0;
 $('.btn').on('click', function(){
@@ -61,7 +72,7 @@ function check(ss)
         flag=0;
         setTimeout(function(){
             newelement();
-        },700);
+        },500*level);
        
     }
     else {
@@ -78,13 +89,21 @@ function check(ss)
 
 
 function end() {
+    
     $("body").removeClass("bg");
     $("body").addClass("red");
     $(".screen1").addClass("hide");
     $(".start-btn").removeClass("hide");
-    $(".texttt").text("Your Score :");
+    $(".texttt").text("Your Score :"+score);
     $(".screen2").addClass("margin");
+    $(".textt2").addClass("hide");
     playsound("wrong");
+    flag=0;
+    count=0;
+    level=1;
+    randomm="";
+    clickedstring="";
+    started=false;
 }
 function start() {
 
@@ -93,6 +112,7 @@ function start() {
     $("body").addClass("bg");
     $(".screen1").removeClass("hide");
     $(".start-btn").addClass("hide");
+    $(".textt2").removeClass("hide");
     $('.texttt').text(" Press Any Key To Start");
     $(".screen2").removeClass("margin");
     // begin();

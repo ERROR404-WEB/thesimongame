@@ -24,6 +24,13 @@ body{
 h1{
     font-size:3rem;
 }
+h3{
+    color:white;
+
+}
+.text-glow{
+    text-shadow: 0px 0px 10px white;
+}
 .pre{
     animation:gloww 2s infinite ;
 }
@@ -63,33 +70,25 @@ h1{
     background-size: cover;
     box-shadow: 0px 0px 10px rgb(43, 255, 0);
 }
-/* .a:hover{
-    box-shadow: 0px 0px 20px rgb(43, 255, 0);
-} */
+
 .b{
     background:url(images/b.jpg);
     background-size: cover;
     box-shadow: 0px 0px 10px rgb(255, 0, 0);
 }
-/* .b:hover{
-    box-shadow: 0px 0px 20px rgb(255, 0, 0);
-} */
+
 .c{
     background:url(images/c.jpg);
     background-size: cover;
     box-shadow: 0px 0px 10px rgb(255, 0, 0);
 }
-/* .c:hover{
-    box-shadow: 0px 0px 20px rgb(255, 0, 0);
-} */
+
 .d{
     background:url(images/d.jpg);
     background-size: cover;
     box-shadow: 0px 0px 10px rgb(0, 217, 255);
 }
-/* .d:hover{
-    box-shadow: 0px 0px 20px rgb(0, 217, 255);
-} */
+
 .btn:active{
     transform: scale(1.05);
 }
@@ -101,7 +100,7 @@ h1{
 .hide{
     display: none;
 }
-.textt{
+.texttt{
     color: rgb(255, 0, 0);
     text-shadow: 0px 0px 10px red;
     
