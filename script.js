@@ -37,6 +37,6 @@ function help()
 function begin()
 {
     var level=1;
-    var a=[5,10,15,20];
-
+    var a=[5,10,15,20,25,30];
+    
 }
