@@ -7,8 +7,8 @@ var count = 0;
 var clickedstring = "";
 var index = 0;
 
-$(document).ready(function(){
-    $('.preloader').addClass("hide");
+window.addEventListener("load",function(){
+    $('.preloader').css("display","none");
 });
 
 $(document).keydown(function (event) {
