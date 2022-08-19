@@ -6,6 +6,11 @@ var randomm = "";
 var count = 0;
 var clickedstring = "";
 var index = 0;
+
+$(document).ready(function(){
+    $('.preloader').addClass("hide");
+});
+
 $(document).keydown(function (event) {
 
     if (!started) {
