@@ -1,56 +1,76 @@
-*{
-    margin:0;
-    padding:0;
+* {
+    margin: 0;
+    padding: 0;
     font-family: 'Silkscreen', cursive;
-    
+
 }
 
 ::-webkit-scrollbar {
     display: none;
 }
-body{
+
+body {
     text-align: center;
 }
-.bg{
+
+.bg {
     text-align: center;
-    background:url(images/bg.jpg);
+    background: url(images/bg.jpg);
     background-size: cover;
 }
-.glow-text{
-    color:aliceblue;
+
+.glow-text {
+    color: aliceblue;
     text-shadow: 0px 0px 10px rgb(0, 234, 255);
     cursor: pointer;
 }
-h1{
-    font-size:3rem;
+
+h1 {
+    font-size: 3rem;
 }
-h3{
-    color:white;
+
+h3 {
+    color: white;
 
 }
-.text-glow{
+
+.text-glow {
     text-shadow: 0px 0px 10px white;
 }
-.pre{
-    animation:gloww 2s infinite ;
+
+.pre {
+    animation: gloww 2s infinite;
 }
-@keyframes gloww{
-    20%{
+
+@keyframes gloww {
+    20% {
         transform: scale(1.05);
-        color:aqua;
+        color: aqua;
     }
 }
-.heading{
+
+.heading {
     margin-top: 2%;
 }
 
-.box1,.box2{
+.box1,
+.box2 {
     display: inline-block;
 }
-.box11,.box22{
+
+.box11,
+.box22 {
     display: inline-block;
 }
-.btn{
+.redbtn{
+    transition: 0.5s;
+
+}
+.redbtn:hover{
+    box-shadow: 0px 0px 10px red;
+    transform: scale(1.05);
+}
+.btn {
     width: 150px;
     height: 150px;
     margin: 15px 15px 15px 15px;
@@ -59,108 +79,124 @@ h3{
     cursor: pointer;
     transition: 0.5s;
 }
-.btn:hover{
+
+.btn:hover {
     transform: scale(1.01);
 }
-.boxes1{
+
+.boxes1 {
     margin-top: 30px;
 }
-.a{
-    background-image:url(images/a.jpg);
+
+.a {
+    background-image: url(images/a.jpg);
     background-size: cover;
     box-shadow: 0px 0px 10px rgb(43, 255, 0);
 }
 
-.b{
-    background:url(images/b.jpg);
+.b {
+    background: url(images/b.jpg);
     background-size: cover;
     box-shadow: 0px 0px 10px rgb(255, 0, 0);
 }
 
-.c{
-    background:url(images/c.jpg);
+.c {
+    background: url(images/c.jpg);
     background-size: cover;
     box-shadow: 0px 0px 10px rgb(255, 0, 0);
 }
 
-.d{
-    background:url(images/d.jpg);
+.d {
+    background: url(images/d.jpg);
     background-size: cover;
     box-shadow: 0px 0px 10px rgb(0, 217, 255);
 }
 
-.btn:active{
+.btn:active {
     transform: scale(1.05);
 }
 
-.red{
-    background-image:url(images/red2.jpg);
+.red {
+    background-image: url(images/red2.jpg);
     background-size: cover;
 }
-.hide{
+
+.hide {
     display: none;
 }
-.texttt{
+
+.texttt {
     color: rgb(255, 0, 0);
     text-shadow: 0px 0px 10px red;
-    
+
     margin-top: 10px;
 }
-.typed-out{
+
+.typed-out {
     overflow: hidden;
     white-space: nowrap;
     font-size: 1.6rem;
     width: 0;
     animation: typing 1s forwards;
 }
-@keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
-  }
 
-.btnnn{
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+.btnnn {
     background-color: rgba(255, 7, 7, 0.292);
     color: rgb(255, 255, 255);
     width: 90px;
     cursor: pointer;
-    height:40px;
-    border:none;
+    height: 40px;
+    border: none;
     text-shadow: 0px 0px 5px rgb(255, 254, 254);
     box-shadow: 0px 0px 10px red;
 }
-.start-btn{
+
+.start-btn {
     margin: 20px;
 }
 
 
 
 
-  @media(max-width:767px)
-{
-    .bg{
-        background:url(images/bg-mobile.jpg);
+@media(max-width:767px) {
+    .bg {
+        background: url(images/bg-mobile.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         background-color: black;
     }
-    .red
-    {
-        background:url(images/red1.jpg);
+
+    .red {
+        background: url(images/red1.jpg);
         background-size: cover;
-        
+
     }
-    .heading{
+
+    .heading {
         margin-top: 5%;
     }
-    .margin{
+
+    .margin {
         margin-top: 115%;
     }
 }
-.animate{
+
+.animate {
     transform: scale(1.1);
     box-shadow: 0px 0px 20px white;
 }
-.blink{
-    background:linear-gradient( rgba(255, 255, 255, 0.274), rgba(255, 255, 255, 0.598) ), url(images/a.jpg) ;
+
+.blink {
+    background: linear-gradient(rgba(255, 255, 255, 0.274), rgba(255, 255, 255, 0.598)), url(images/a.jpg);
     background-size: cover;
 }
