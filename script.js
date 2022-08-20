@@ -80,7 +80,7 @@ function check(ss) {
         flag = 0;
         setTimeout(function () {
             newelement();
-        }, 500 * level);
+        }, 1000);
 
     }
     else {
